@@ -9,11 +9,9 @@ This is my digital lab space — a place to try ideas, break things, and explore
 ## 🎯 Purpose
 
 - Prototype backend features using Django and DRF  
-- Test web crawling tools like BeautifulSoup and Selenium  
-- Experiment with NLP and keyword extraction from news articles  
 - Build and visualize data-driven mini apps  
 - Archive useful coding patterns and tech findings  
-
+- Experiment with new Python libraries and tools in a safe sandbox  
 ---
 
 ## 🧰 Stack in Use
