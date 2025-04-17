@@ -23,5 +23,7 @@ This is my digital lab space — a place to try ideas, break things, and explore
 | Frontend/UI      | Streamlit, Django templates                 |
 | Database         | SQLite, PostgreSQL                         |
 | Dev Tools        | Git, VSCode, Postman                       |
+| Crawling Tools   | Selenium                                   |
+
 
 ---
