@@ -24,6 +24,7 @@ This is my digital lab space — a place to try ideas, break things, and explore
 | Database         | SQLite, PostgreSQL                         |
 | Dev Tools        | Git, VSCode, Postman                       |
 | Crawling Tools   | Selenium                                   |
+| Computer Vision   | openCV                                   |
 
 
 ---
