@@ -2,5 +2,12 @@
 
 
 def solution(strings, n):
-    answer = []
-    return answer
+    result = []
+    asc = []
+    for idx, i in enumerate(strings):
+        asc.append(i[n])
+        result.append(f"{idx}: {i}")
+    return result, asc
+
+print(solution(["sun", "bed", "car"], 1))
+print(solution(["abce", "abcd", "cdx"],2))

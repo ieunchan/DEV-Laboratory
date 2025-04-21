@@ -1,4 +1,4 @@
-import cv2, time, datetime
+import cv2, datetime
 
 cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
