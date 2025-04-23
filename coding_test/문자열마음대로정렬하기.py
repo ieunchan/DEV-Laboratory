@@ -2,12 +2,8 @@
 
 
 def solution(strings, n):
-    result = []
-    asc = []
-    for idx, i in enumerate(strings):
-        asc.append(i[n])
-        result.append(f"{idx}: {i}")
-    return result, asc
-
+    # 정렬: 첫 번째 기준은 strings[i][n], 두 번째 기준은 전체 문자열(strings[i])
+    return sorted(strings, key=lambda x: (x[n], x))
+    
 print(solution(["sun", "bed", "car"], 1))
 print(solution(["abce", "abcd", "cdx"],2))
