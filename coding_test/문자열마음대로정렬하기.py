@@ -2,8 +2,7 @@
 
 
 def solution(strings, n):
-    # 정렬: 첫 번째 기준은 strings[i][n], 두 번째 기준은 전체 문자열(strings[i])
     return sorted(strings, key=lambda x: (x[n], x))
-    
+
 print(solution(["sun", "bed", "car"], 1))
 print(solution(["abce", "abcd", "cdx"],2))
