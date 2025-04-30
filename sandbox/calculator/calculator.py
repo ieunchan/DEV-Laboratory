@@ -1,6 +1,6 @@
 import tkinter as tk
 
-
+# 디스플레이에 계속 업데이트될 표현식입니다.
 expression= ""
 
 
@@ -26,22 +26,14 @@ def create_button(window):
     ' ', 'C', ' ', '%',
     ]
     for index, text in enumerate(buttons): # row에 +1을 하는 이유는 0번 row에는 디스플레이가 있어서입니다.
-        row = (index // 4) + 1 # '7'의 index = 0, text = '7' 인데 0 // 4 = 0이고 +1 을 해주니깐 1번째 row에 배정됩니다.
-        col = index % 4 # '7'의 index = 0, 0%4 == 0이니깐 0번째 column에 배정됩니다.
-        button = tk.Button(
-            window, 
-            text=text, 
-            width=5, 
-            height=2, 
-            command=lambda t=text: press(t) # 람다 함수는 버튼이 눌린 버튼을 press() 함수로 전송합니다.
-        ) 
-        button.grid(
-            row=row, 
-            column=col, 
-            padx=5, 
-            pady=5, 
-            sticky="nsew"
-        )
+        # '7'의 index = 0, text = '7' 인데 0 // 4 = 0이고 +1 을 해주니깐 1번째 row에 배정됩니다.
+        row = (index // 4) + 1 
+        # '7'의 index = 0, 0%4 == 0이니깐 0번째 column에 배정됩니다.
+        col = index % 4 
+        # 람다 함수는 버튼이 눌린 버튼을 press() 함수로 전송합니다.
+        button = tk.Button(window, text=text, width=5, height=2, command=lambda t=text: press(t)) 
+        # 버튼 행렬 설정, 간격 설정
+        button.grid( row=row, column=col, padx=5, pady=5, sticky="nsew")
         
 # 디스플레이를 생성하는 함수입니다.
 def create_display(window):
