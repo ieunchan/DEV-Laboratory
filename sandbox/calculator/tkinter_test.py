@@ -15,7 +15,6 @@ style.configure(
     "Custom.TButton", 
     foreground = "white", 
     background = "black",
-    
     )
 button = ttk.Button(window, text="ttk button",style="Custom.TButton")
 button.pack()
