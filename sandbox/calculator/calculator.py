@@ -10,7 +10,7 @@ def create_window():
     window.title("tkinter 테스트")
     window.geometry("500x500+150+150")
     window.resizable(True,True)
-    # Configure the three columns to expand equally
+    # 동일한 간격으로 4칸의 컬럼 생성
     for i in range(4):
         window.columnconfigure(i, weight=1)
     return window
@@ -25,7 +25,7 @@ def create_button(window):
     ' ', 'C', ' ', '%',
     ]
     for index, text in enumerate(buttons):
-        row = (index // 4) + 1  # buttons start from row 1
+        row = (index // 4) + 1  # 버튼은 1행부터 생성된다.
         col = index % 4
         button = tk.Button(window, text=text, width=5, height=2)
         button.grid(row=row, column=col, padx=5, pady=5, sticky="nsew")
