@@ -12,7 +12,7 @@
 # 원하는 순서의 단어 배열을 만들 수 있습니다.
 
 def solution(cards1, cards2, goal):
-    return set(cards1, cards2)
+    return set()
 
 
 print(solution(["i", "drink", "water"],["want", "to"],["i", "want", "to", "drink", "water"]))
